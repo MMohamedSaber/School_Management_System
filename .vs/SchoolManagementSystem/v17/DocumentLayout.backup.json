@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA664F4A-9225-4362-9B0A-77A02FAFA839}|SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.core\\entities\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA664F4A-9225-4362-9B0A-77A02FAFA839}|SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj|solutionrelative:schoolmanagementsystem.core\\entities\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A43D7E-8F5D-4AAA-AD29-C6C679794BEB}|SchoolManagementSystem.Api\\SchoolManagementSystem.Api.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{76A43D7E-8F5D-4AAA-AD29-C6C679794BEB}|SchoolManagementSystem.Api\\SchoolManagementSystem.Api.csproj|solutionrelative:schoolmanagementsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\Migrations\\20251113214001_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SchoolManagementSystem.Infrastructure\\Migrations\\20251113214001_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD6D9D0B-0F72-4C7A-A80B-E32780B6AE72}|SchoolManagementSystem.Infrastructure\\SchoolManagementSystem.Infrastructure.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD6D9D0B-0F72-4C7A-A80B-E32780B6AE72}|SchoolManagementSystem.Infrastructure\\SchoolManagementSystem.Infrastructure.csproj|solutionrelative:schoolmanagementsystem.infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA664F4A-9225-4362-9B0A-77A02FAFA839}|SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.core\\schoolmanagementsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AA664F4A-9225-4362-9B0A-77A02FAFA839}|SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj|solutionrelative:schoolmanagementsystem.core\\schoolmanagementsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A43D7E-8F5D-4AAA-AD29-C6C679794BEB}|SchoolManagementSystem.Api\\SchoolManagementSystem.Api.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A43D7E-8F5D-4AAA-AD29-C6C679794BEB}|SchoolManagementSystem.Api\\SchoolManagementSystem.Api.csproj|solutionrelative:schoolmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\RealFullProjects\\Clinic\\Clinic.Infrastructure\\Data\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Core\\Entities\\main.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem.Core\\Entities\\main.cs",
+              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Core\\Entities\\main.cs",
+              "RelativeToolTip": "SchoolManagementSystem.Core\\Entities\\main.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAAC8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:54:19.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20251113214001_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\Migrations\\20251113214001_Initial.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem.Infrastructure\\Migrations\\20251113214001_Initial.cs",
+              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\Migrations\\20251113214001_Initial.cs",
+              "RelativeToolTip": "SchoolManagementSystem.Infrastructure\\Migrations\\20251113214001_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:40:02.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Api\\Program.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Api\\Program.cs",
+              "RelativeToolTip": "SchoolManagementSystem.Api\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwBIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:29:52.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SchoolManagementSystem.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj",
+              "RelativeDocumentMoniker": "SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj",
+              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj",
+              "RelativeToolTip": "SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-13T20:45:11.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem.Infrastructure\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\AppDbContext.cs",
+              "RelativeToolTip": "SchoolManagementSystem.Infrastructure\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:41:53.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\RealFullProjects\\Clinic\\Clinic.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\RealFullProjects\\Clinic\\Clinic.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:40:56.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "SchoolManagementSystem.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Api\\appsettings.json",
+              "RelativeToolTip": "SchoolManagementSystem.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-13T20:11:45.296Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

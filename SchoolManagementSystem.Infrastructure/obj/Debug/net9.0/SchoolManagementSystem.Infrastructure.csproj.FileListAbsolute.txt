@@ -1,0 +1,17 @@
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\bin\Debug\net9.0\SchoolManagementSystem.Infrastructure.deps.json
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\bin\Debug\net9.0\SchoolManagementSystem.Infrastructure.runtimeconfig.json
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\bin\Debug\net9.0\SchoolManagementSystem.Infrastructure.dll
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\bin\Debug\net9.0\SchoolManagementSystem.Infrastructure.pdb
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\bin\Debug\net9.0\SchoolManagementSystem.Core.dll
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\bin\Debug\net9.0\SchoolManagementSystem.Core.pdb
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolMa.F81A0AC6.Up2Date
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.dll
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\refint\SchoolManagementSystem.Infrastructure.dll
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.pdb
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\ref\SchoolManagementSystem.Infrastructure.dll

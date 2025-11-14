@@ -1,0 +1,12 @@
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\bin\Debug\net9.0\SchoolManagementSystem.Core.deps.json
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\bin\Debug\net9.0\SchoolManagementSystem.Core.dll
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\bin\Debug\net9.0\SchoolManagementSystem.Core.pdb
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\SchoolManagementSystem.Core.csproj.AssemblyReference.cache
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\SchoolManagementSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\SchoolManagementSystem.Core.AssemblyInfoInputs.cache
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\SchoolManagementSystem.Core.AssemblyInfo.cs
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\SchoolManagementSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\SchoolManagementSystem.Core.dll
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\refint\SchoolManagementSystem.Core.dll
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\SchoolManagementSystem.Core.pdb
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\ref\SchoolManagementSystem.Core.dll
