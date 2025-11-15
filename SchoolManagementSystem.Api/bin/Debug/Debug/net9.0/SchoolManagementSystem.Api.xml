@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SchoolManagementSystem.Api</name>
+    </assembly>
+    <members>
+        <member name="M:SchoolManagementSystem.API.Controllers.AuthController.Register(SchoolManagementSystem.Core.DTOs.Auth.RegisterDto)">
+            <summary>
+            Register a new user
+            </summary>
+            <remarks>
+            Role must be one of the following:
+            - Admin = 1
+            - Teacher = 2
+            - Student = 3
+            </remarks>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.AuthController.Login(SchoolManagementSystem.Core.DTOs.Auth.LoginDto)">
+            <summary>
+            Login and receive JWT access token
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.AuthController.RefreshToken(SchoolManagementSystem.Core.DTOs.Auth.RefreshTokenDto)">
+            <summary>
+            Refresh access token using refresh token
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.AuthController.RevokeToken(SchoolManagementSystem.Core.DTOs.Auth.RefreshTokenDto)">
+            <summary>
+            Revoke (logout) a refresh token
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.AuthController.GetCurrentUser">
+            <summary>
+            Test endpoint to verify authentication
+            </summary>
+        </member>
+    </members>
+</doc>

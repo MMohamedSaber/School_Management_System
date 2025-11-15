@@ -10,3 +10,4 @@ C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Cor
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\refint\SchoolManagementSystem.Core.dll
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\SchoolManagementSystem.Core.pdb
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\ref\SchoolManagementSystem.Core.dll
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Core\obj\Debug\net9.0\SchoolManagementSystem.Core.sourcelink.json

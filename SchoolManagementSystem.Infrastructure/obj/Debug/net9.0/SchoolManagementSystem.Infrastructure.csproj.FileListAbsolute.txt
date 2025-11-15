@@ -15,3 +15,4 @@ C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Inf
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.pdb
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.genruntimeconfig.cache
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\ref\SchoolManagementSystem.Infrastructure.dll
+C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Infrastructure\obj\Debug\net9.0\SchoolManagementSystem.Infrastructure.sourcelink.json
