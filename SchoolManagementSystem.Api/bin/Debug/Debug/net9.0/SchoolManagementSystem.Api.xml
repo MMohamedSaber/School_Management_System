@@ -15,24 +15,32 @@
             - Student = 3
             </remarks>
         </member>
-        <member name="M:SchoolManagementSystem.API.Controllers.AuthController.Login(SchoolManagementSystem.Core.DTOs.Auth.LoginDto)">
+        <member name="M:SchoolManagementSystem.API.Controllers.Admin.DepartmentsController.GetAll(System.Int32,System.Int32,System.String)">
             <summary>
-            Login and receive JWT access token
+            Get all departments with pagination and search
+            </summary>
+            <param name="pageNumber">Page number (default: 1)</param>
+            <param name="pageSize">Page size (default: 10)</param>
+            <param name="searchTerm">Search by name or description</param>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.Admin.DepartmentsController.GetById(System.Int32)">
+            <summary>
+            Get department by ID
             </summary>
         </member>
-        <member name="M:SchoolManagementSystem.API.Controllers.AuthController.RefreshToken(SchoolManagementSystem.Core.DTOs.Auth.RefreshTokenDto)">
+        <member name="M:SchoolManagementSystem.API.Controllers.Admin.DepartmentsController.Create(SchoolManagementSystem.Core.DTOs.Department.CreateDepartmentDto)">
             <summary>
-            Refresh access token using refresh token
+            Create a new department
             </summary>
         </member>
-        <member name="M:SchoolManagementSystem.API.Controllers.AuthController.RevokeToken(SchoolManagementSystem.Core.DTOs.Auth.RefreshTokenDto)">
+        <member name="M:SchoolManagementSystem.API.Controllers.Admin.DepartmentsController.Update(System.Int32,SchoolManagementSystem.Core.DTOs.Department.UpdateDepartmentDto)">
             <summary>
-            Revoke (logout) a refresh token
+            Update an existing department
             </summary>
         </member>
-        <member name="M:SchoolManagementSystem.API.Controllers.AuthController.GetCurrentUser">
+        <member name="M:SchoolManagementSystem.API.Controllers.Admin.DepartmentsController.Delete(System.Int32)">
             <summary>
-            Test endpoint to verify authentication
+            Soft delete a department
             </summary>
         </member>
     </members>

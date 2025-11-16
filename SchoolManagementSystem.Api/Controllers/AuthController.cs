@@ -66,9 +66,6 @@ namespace SchoolManagementSystem.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Login and receive JWT access token
-        /// </summary>
         [HttpPost("login")]
         [ProducesResponseType(typeof(AuthResponseDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -107,9 +104,6 @@ namespace SchoolManagementSystem.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Refresh access token using refresh token
-        /// </summary>
         [HttpPost("refresh-token")]
         [ProducesResponseType(typeof(AuthResponseDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -148,9 +142,6 @@ namespace SchoolManagementSystem.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Revoke (logout) a refresh token
-        /// </summary>
         [HttpPost("revoke-token")]
         [Authorize]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -190,9 +181,6 @@ namespace SchoolManagementSystem.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Test endpoint to verify authentication
-        /// </summary>
         [HttpGet("me")]
         [Authorize]
         [ProducesResponseType(StatusCodes.Status200OK)]
