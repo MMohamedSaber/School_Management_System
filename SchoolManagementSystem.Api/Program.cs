@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using SchoolManagementSystem.Api.Converter;
+using SchoolManagementSystem.API.Middleware;
 using SchoolManagementSystem.Core.Interfaces;
 using SchoolManagementSystem.Core.Settings;
 using SchoolManagementSystem.Infrastructure;
@@ -28,7 +30,11 @@ builder.Services.AddScoped<IPasswordService, PasswordService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
-
+builder.Services.AddScoped<ICourseService, CourseService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IClassService, ClassService>();
+builder.Services.AddScoped<IAttendanceService, AttendanceService>();
+builder.Services.AddScoped<IAssignmentService, AssignmentService>();
 
 
 
@@ -99,7 +105,11 @@ builder.Services.AddAuthorization(options =>
 });
 
 // ==================== CONTROLLERS & API ====================
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new DateTimeConverter());
+    options.JsonSerializerOptions.Converters.Add(new NullableDateTimeConverter());
+});
 
 // ==================== SWAGGER ====================
 builder.Services.AddEndpointsApiExplorer();
@@ -155,7 +165,15 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+
+
 // ==================== MIDDLEWARE PIPELINE ====================
+// IMPORTANT: Global Exception Handler must be first!
+
+app.UseGlobalExceptionHandler();
+
+
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -170,7 +188,7 @@ app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
 
-// IMPORTANT: Authentication must come before Authorization
+// Authentication must come before Authorization
 app.UseAuthentication();
 app.UseAuthorization();
 

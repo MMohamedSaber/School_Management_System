@@ -4,6 +4,116 @@
         <name>SchoolManagementSystem.Api</name>
     </assembly>
     <members>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AssignmentsController.Create(SchoolManagementSystem.Core.DTOs.Assignment.CreateAssignmentDto)">
+            <summary>
+            Create a new assignment
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AssignmentsController.Update(System.Int32,SchoolManagementSystem.Core.DTOs.Assignment.UpdateAssignmentDto)">
+            <summary>
+            Update an assignment
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AssignmentsController.Delete(System.Int32)">
+            <summary>
+            Delete an assignment
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AssignmentsController.GetClassAssignments(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get all assignments for a class
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AssignmentsController.GetById(System.Int32)">
+            <summary>
+            Get assignment by ID
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AssignmentsController.GetSubmissions(System.Int32)">
+            <summary>
+            Get all submissions for an assignment
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AssignmentsController.GradeSubmission(System.Int32,SchoolManagementSystem.Core.DTOs.Assignment.GradeSubmissionDto)">
+            <summary>
+            Grade a student submission
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AttendanceController.MarkAttendance(SchoolManagementSystem.Core.DTOs.Attendance.MarkAttendanceDto)">
+            <summary>
+            Mark attendance for a single student
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AttendanceController.BulkMarkAttendance(SchoolManagementSystem.Core.DTOs.Attendance.BulkMarkAttendanceDto)">
+            <summary>
+            Mark attendance for multiple students at once
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AttendanceController.GetClassAttendance(System.Int32,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            Get attendance history for a class with filters
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AttendanceController.GetClassAttendanceSummary(System.Int32)">
+            <summary>
+            Get attendance summary for a class
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.AttendanceController.GetStudentAttendance(System.Int32,System.Int32)">
+            <summary>
+            Get attendance for a specific student in a class
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.CoursesController.GetAll(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Get all courses with pagination and filtering
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.CoursesController.GetById(System.Int32)">
+            <summary>
+            Get course by ID
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.CoursesController.Create(SchoolManagementSystem.Core.DTOs.Course.CreateCourseDto)">
+            <summary>
+            Create a new course
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.CoursesController.Update(System.Int32,SchoolManagementSystem.Core.DTOs.Course.UpdateCourseDto)">
+            <summary>
+            Update an existing course
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.CoursesController.Delete(System.Int32)">
+            <summary>
+            Soft delete a course
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.UsersController.GetAll(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <summary>
+            Get all users with pagination and filtering
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.UsersController.GetById(System.Int32)">
+            <summary>
+            Get user by ID
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.UsersController.GetStatistics">
+            <summary>
+            Get user statistics
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.UsersController.Update(System.Int32,SchoolManagementSystem.Core.DTOs.User.UpdateUserDto)">
+            <summary>
+            Update an existing user
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.UsersController.Delete(System.Int32)">
+            <summary>
+            Soft delete a user
+            </summary>
+        </member>
         <member name="M:SchoolManagementSystem.API.Controllers.AuthController.Register(SchoolManagementSystem.Core.DTOs.Auth.RegisterDto)">
             <summary>
             Register a new user
@@ -14,6 +124,41 @@
             - Teacher = 2
             - Student = 3
             </remarks>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.Teacher.ClassesController.GetMyClasses(System.Int32,System.Int32,System.String)">
+            <summary>
+            Get all classes for current teacher
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.Teacher.ClassesController.GetById(System.Int32)">
+            <summary>
+            Get class by ID (only teacher's own classes)
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.Teacher.ClassesController.Create(SchoolManagementSystem.Core.DTOs.Class.CreateClassDto)">
+            <summary>
+            Create a new class
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.Teacher.ClassesController.Update(System.Int32,SchoolManagementSystem.Core.DTOs.Class.UpdateClassDto)">
+            <summary>
+            Update a class
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.Teacher.ClassesController.Deactivate(System.Int32)">
+            <summary>
+            Deactivate a class
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.Teacher.ClassesController.EnrollStudent(System.Int32,SchoolManagementSystem.Core.DTOs.Class.EnrollStudentDto)">
+            <summary>
+            Enroll a student in the class
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.API.Controllers.Teacher.ClassesController.GetClassStudents(System.Int32)">
+            <summary>
+            Get all students enrolled in a class
+            </summary>
         </member>
         <member name="M:SchoolManagementSystem.API.Controllers.Admin.DepartmentsController.GetAll(System.Int32,System.Int32,System.String)">
             <summary>
