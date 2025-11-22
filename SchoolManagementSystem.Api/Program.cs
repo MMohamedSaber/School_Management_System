@@ -35,6 +35,10 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IClassService, ClassService>();
 builder.Services.AddScoped<IAttendanceService, AttendanceService>();
 builder.Services.AddScoped<IAssignmentService, AssignmentService>();
+builder.Services.AddScoped<IStudentService, StudentService>();
+builder.Services.AddScoped<IFileUploadService, FileUploadService>();
+
+
 
 
 
@@ -164,7 +168,7 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
-
+app.UseStaticFiles();
 
 
 // ==================== MIDDLEWARE PIPELINE ====================
@@ -182,6 +186,9 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "School Management System API V1");
         // c.RoutePrefix = string.Empty; // Set Swagger UI at app root
     });
+
+
+
 }
 
 app.UseHttpsRedirection();

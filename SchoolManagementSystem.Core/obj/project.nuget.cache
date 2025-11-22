@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TKd2jcqpHQs=",
+  "dgSpecHash": "GOhRuzA3W8U=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.aspnet.identity.entityframework\\2.2.4\\microsoft.aspnet.identity.entityframework.2.2.4.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.11\\microsoft.aspnetcore.cryptography.internal.9.0.11.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.11\\microsoft.aspnetcore.cryptography.keyderivation.9.0.11.nupkg.sha512",
+    "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
+    "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\9.0.11\\microsoft.aspnetcore.identity.entityframeworkcore.9.0.11.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.11\\microsoft.entityframeworkcore.9.0.11.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.11\\microsoft.entityframeworkcore.abstractions.9.0.11.nupkg.sha512",
@@ -19,12 +22,16 @@
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.11\\microsoft.extensions.configuration.abstractions.9.0.11.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.11\\microsoft.extensions.dependencyinjection.9.0.11.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.11\\microsoft.extensions.dependencyinjection.abstractions.9.0.11.nupkg.sha512",
+    "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.identity.core\\9.0.11\\microsoft.extensions.identity.core.9.0.11.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.identity.stores\\9.0.11\\microsoft.extensions.identity.stores.9.0.11.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.logging\\9.0.11\\microsoft.extensions.logging.9.0.11.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.11\\microsoft.extensions.logging.abstractions.9.0.11.nupkg.sha512",
     "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.options\\9.0.11\\microsoft.extensions.options.9.0.11.nupkg.sha512",
-    "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.11\\microsoft.extensions.primitives.9.0.11.nupkg.sha512"
+    "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.11\\microsoft.extensions.primitives.9.0.11.nupkg.sha512",
+    "C:\\Users\\Mohamed Saber\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\microsoft.net.http.headers.2.3.0.nupkg.sha512",
+    "C:\\Users\\Mohamed Saber\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
+    "C:\\Users\\Mohamed Saber\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
   ],
   "logs": [
     {

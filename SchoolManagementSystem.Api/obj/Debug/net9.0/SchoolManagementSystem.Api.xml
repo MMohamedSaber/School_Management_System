@@ -89,6 +89,46 @@
             Soft delete a course
             </summary>
         </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.GetDashboard">
+            <summary>
+            Get student dashboard with statistics
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.GetClasses">
+            <summary>
+            Get all enrolled classes
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.GetAttendance(System.Nullable{System.Int32})">
+            <summary>
+            Get attendance records
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.GetGrades">
+            <summary>
+            Get all graded submissions
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.GetAssignments(System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <summary>
+            Get assignments for enrolled classes
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.SubmitAssignment(System.Int32,SchoolManagementSystem.Core.DTOs.Student.SubmitAssignmentDto)">
+            <summary>
+            Submit an assignment
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.SubmitAssignmentWithFile(System.Int32,SchoolManagementSystem.Core.DTOs.FileUploadDto)">
+            <summary>
+            Submit an assignment with file upload
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.DownloadSubmission(System.Int32)">
+            <summary>
+            Download submission file
+            </summary>
+        </member>
         <member name="M:SchoolManagementSystem.Api.Controllers.UsersController.GetAll(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})">
             <summary>
             Get all users with pagination and filtering

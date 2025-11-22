@@ -23,4 +23,8 @@
     <ProjectReference Include="..\SchoolManagementSystem.Infrastructure\SchoolManagementSystem.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\NewFolder\" />
+  </ItemGroup>
+
 </Project>

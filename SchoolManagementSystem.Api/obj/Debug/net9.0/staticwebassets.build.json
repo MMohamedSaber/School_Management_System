@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "ZX1Z/zsqfH9EleGNQSKIHbieoWLdEWi1H7RUvgu8plA=",
-  "Source": "SchoolManagementSystem.Api",
-  "BasePath": "_content/SchoolManagementSystem.Api",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"YeZ1QIDqd08Z2wtRhg83IYXh+L4gA2vIFSC7rdYPu84=","Source":"SchoolManagementSystem.Api","BasePath":"_content/SchoolManagementSystem.Api","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[{"Name":"SchoolManagementSystem.Api\\wwwroot","Source":"SchoolManagementSystem.Api","ContentRoot":"C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Api\\wwwroot\\","BasePath":"_content/SchoolManagementSystem.Api","Pattern":"**"}],"Assets":[],"Endpoints":[]}
