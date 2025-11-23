@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using SchoolManagementSystem.Core.DTOs.Course;
 using SchoolManagementSystem.Core.DTOs.Department;
 using SchoolManagementSystem.Core.Entities;
@@ -9,13 +10,41 @@ namespace SchoolManagementSystem.Infrastructure.Services
     public class CourseService : ICourseService
     {
         private readonly AppDbContext _context;
-
+        private readonly IMemoryCache _cache;
+        private const string CoursesCacheKey = "courses_list";
+        private readonly TimeSpan CacheDuration = TimeSpan.FromMinutes(30);
         public CourseService(AppDbContext context)
         {
             _context = context;
         }
 
         public async Task<PaginatedResult<CourseResponseDto>> GetAllAsync(
+           int pageNumber,
+           int pageSize,
+           string searchTerm = null,
+           int? departmentId = null,
+           int? minCredits = null,
+           int? maxCredits = null)
+        {
+            if (!string.IsNullOrWhiteSpace(searchTerm) || departmentId.HasValue ||
+            minCredits.HasValue || maxCredits.HasValue)
+            {
+                return await GetCoursesFromDatabaseAsync(
+                    pageNumber, pageSize, searchTerm, departmentId, minCredits, maxCredits);
+            }
+
+            var cacheKey = $"{CoursesCacheKey}_page_{pageNumber}_size_{pageSize}";
+            if (_cache.TryGetValue(cacheKey, out PaginatedResult<CourseResponseDto> cachedResult))
+            {
+                return cachedResult;
+            }
+
+            var result = await GetCoursesFromDatabaseAsync(pageNumber, pageSize, searchTerm, departmentId, minCredits, maxCredits);
+            _cache.Set(cacheKey, result, CacheDuration);
+            return result;
+        }
+
+        public async Task<PaginatedResult<CourseResponseDto>> GetCoursesFromDatabaseAsync(
             int pageNumber,
             int pageSize,
             string searchTerm = null,
@@ -156,7 +185,7 @@ namespace SchoolManagementSystem.Infrastructure.Services
 
             _context.Courses.Add(course);
             await _context.SaveChangesAsync();
-
+            InvalidateCoursesCache();
             return await GetByIdAsync(course.Id);
         }
 
@@ -233,7 +262,23 @@ namespace SchoolManagementSystem.Infrastructure.Services
 
             await _context.SaveChangesAsync();
 
+            InvalidateCoursesCache();
+
             return true;
         }
+        private void InvalidateCoursesCache()
+        {
+            _cache.Remove(CoursesCacheKey);
+
+            // Remove paginated cache entries
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int size = 10; size <= 100; size += 10)
+                {
+                    _cache.Remove($"{CoursesCacheKey}_page_{i}_size_{size}");
+                }
+            }
+        }
     }
+
 }

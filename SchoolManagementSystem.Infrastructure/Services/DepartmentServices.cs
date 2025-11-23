@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using SchoolManagementSystem.Core.DTOs.Department;
 using SchoolManagementSystem.Core.Entities;
 using SchoolManagementSystem.Core.Interfaces;
@@ -8,13 +9,47 @@ namespace SchoolManagementSystem.Infrastructure.Services
     public class DepartmentService : IDepartmentService
     {
         private readonly AppDbContext _context;
+        private readonly IMemoryCache _cache;
+        private const string DepartmentsCacheKey = "departments_list";
+        private readonly TimeSpan CacheDuration = TimeSpan.FromMinutes(30);
 
-        public DepartmentService(AppDbContext context)
+        public DepartmentService(AppDbContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         public async Task<PaginatedResult<DepartmentResponseDto>> GetAllAsync(
+            int pageNumber,
+            int pageSize,
+            string searchTerm = null)
+        {
+            // If there's a search term, bypass cache
+            if (!string.IsNullOrWhiteSpace(searchTerm))
+            {
+                return await GetDepartmentsFromDatabaseAsync(pageNumber, pageSize, searchTerm);
+            }
+
+            // Try to get from cache
+            var cacheKey = $"{DepartmentsCacheKey}_page_{pageNumber}_size_{pageSize}";
+
+            if (_cache.TryGetValue(cacheKey, out PaginatedResult<DepartmentResponseDto> cachedResult))
+            {
+                Console.WriteLine(">>> Returned From Cache");
+                return cachedResult;
+
+            }
+
+            // Not in cache, get from database
+            var result = await GetDepartmentsFromDatabaseAsync(pageNumber, pageSize, searchTerm);
+
+            // Store in cache
+            _cache.Set(cacheKey, result, CacheDuration);
+
+            return result;
+        }
+
+        private async Task<PaginatedResult<DepartmentResponseDto>> GetDepartmentsFromDatabaseAsync(
             int pageNumber,
             int pageSize,
             string searchTerm = null)
@@ -25,7 +60,6 @@ namespace SchoolManagementSystem.Infrastructure.Services
                 .Where(d => d.IsActive)
                 .AsQueryable();
 
-            // Search filter
             if (!string.IsNullOrWhiteSpace(searchTerm))
             {
                 query = query.Where(d =>
@@ -33,10 +67,8 @@ namespace SchoolManagementSystem.Infrastructure.Services
                     d.Description.Contains(searchTerm));
             }
 
-            // Total count
             var totalCount = await query.CountAsync();
 
-            // Pagination
             var departments = await query
                 .OrderBy(d => d.Name)
                 .Skip((pageNumber - 1) * pageSize)
@@ -131,6 +163,9 @@ namespace SchoolManagementSystem.Infrastructure.Services
             _context.Departments.Add(department);
             await _context.SaveChangesAsync();
 
+            // Invalidate cache after create
+            InvalidateDepartmentsCache();
+
             return await GetByIdAsync(department.Id);
         }
 
@@ -180,6 +215,9 @@ namespace SchoolManagementSystem.Infrastructure.Services
 
             await _context.SaveChangesAsync();
 
+            // Invalidate cache after update
+            InvalidateDepartmentsCache();
+
             return await GetByIdAsync(department.Id);
         }
 
@@ -208,7 +246,26 @@ namespace SchoolManagementSystem.Infrastructure.Services
 
             await _context.SaveChangesAsync();
 
+            // Invalidate cache after delete
+            InvalidateDepartmentsCache();
+
             return true;
+        }
+
+        private void InvalidateDepartmentsCache()
+        {
+            // Remove base cache key
+            _cache.Remove(DepartmentsCacheKey);
+
+            // Remove paginated cache entries
+            // Simple approach: clear first 10 pages with common page sizes
+            for (int page = 1; page <= 10; page++)
+            {
+                for (int size = 10; size <= 100; size += 10)
+                {
+                    _cache.Remove($"{DepartmentsCacheKey}_page_{page}_size_{size}");
+                }
+            }
         }
     }
 }

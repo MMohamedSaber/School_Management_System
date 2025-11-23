@@ -154,6 +154,21 @@
             Soft delete a user
             </summary>
         </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.CacheController.ClearDepartmentsCache">
+            <summary>
+            Clear all departments cache
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.CacheController.ClearCoursesCache">
+            <summary>
+            Clear all courses cache
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.CacheController.ClearAllCache">
+            <summary>
+            Clear all cache
+            </summary>
+        </member>
         <member name="M:SchoolManagementSystem.API.Controllers.AuthController.Register(SchoolManagementSystem.Core.DTOs.Auth.RegisterDto)">
             <summary>
             Register a new user

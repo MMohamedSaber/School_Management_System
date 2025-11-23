@@ -1,5 +1,35 @@
 [
   {
+    "ContainingType": "SchoolManagementSystem.Api.Controllers.CacheController",
+    "Method": "ClearAllCache",
+    "RelativePath": "api/admin/Cache/clear/all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagementSystem.Api.Controllers.CacheController",
+    "Method": "ClearCoursesCache",
+    "RelativePath": "api/admin/Cache/clear/courses",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagementSystem.Api.Controllers.CacheController",
+    "Method": "ClearDepartmentsCache",
+    "RelativePath": "api/admin/Cache/clear/departments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolManagementSystem.Api.Controllers.CoursesController",
     "Method": "GetAll",
     "RelativePath": "api/admin/Courses",
@@ -1141,26 +1171,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SchoolManagementSystem.Api.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SchoolManagementSystem.Api.WeatherForecast, SchoolManagementSystem.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

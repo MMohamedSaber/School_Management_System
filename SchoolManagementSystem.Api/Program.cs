@@ -25,6 +25,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     )
 );
 
+builder.Services.AddMemoryCache();
+
 // ==================== DEPENDENCY INJECTION ====================
 builder.Services.AddScoped<IPasswordService, PasswordService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
