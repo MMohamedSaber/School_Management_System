@@ -13,14 +13,17 @@ namespace SchoolManagementSystem.Api.Controllers
     public partial class StudentController : ControllerBase
     {
         private readonly IStudentService _studentService;
+        private readonly INotificationService _notificationService;
         private readonly ILogger<StudentController> _logger;
 
         public StudentController(
             IStudentService studentService,
-            ILogger<StudentController> logger)
+            ILogger<StudentController> logger,
+            INotificationService notificationService)
         {
             _studentService = studentService;
             _logger = logger;
+            _notificationService = notificationService;
         }
 
         private int GetCurrentStudentId()
@@ -220,6 +223,63 @@ namespace SchoolManagementSystem.Api.Controllers
             }
 
             return File(result.Value.fileData, "application/octet-stream", result.Value.fileName);
+        }
+        /// <summary>
+        /// Get all notifications for current student
+        /// </summary>
+        [HttpGet("notifications")]
+        public async Task<IActionResult> GetNotifications(
+            [FromQuery] bool? onlyUnread = null)
+        {
+            var studentId = GetCurrentStudentId();
+            var notifications = await _notificationService.GetStudentNotificationsAsync(studentId, onlyUnread);
+
+            return Ok(new
+            {
+                success = true,
+                message = "Notifications retrieved successfully",
+                data = notifications,
+                totalCount = notifications.Count,
+                unreadCount = notifications.Count(n => !n.IsRead)
+            });
+        }
+
+        /// <summary>
+        /// Get unread notifications count
+        /// </summary>
+        [HttpGet("notifications/unread-count")]
+        public async Task<IActionResult> GetUnreadCount()
+        {
+            var studentId = GetCurrentStudentId();
+            var count = await _notificationService.GetUnreadCountAsync(studentId);
+
+            return Ok(new
+            {
+                success = true,
+                unreadCount = count
+            });
+        }
+
+        /// <summary>
+        /// Mark notification as read
+        /// </summary>
+        [HttpPut("notifications/{id}/read")]
+        public async Task<IActionResult> MarkAsRead(int id)
+        {
+            var studentId = GetCurrentStudentId();
+            var notification = await _notificationService.MarkAsReadAsync(id, studentId);
+
+            _logger.LogInformation(
+                "Notification marked as read by student {StudentId}: NotificationId {NotificationId}",
+                studentId,
+                id);
+
+            return Ok(new
+            {
+                success = true,
+                message = "Notification marked as read",
+                data = notification
+            });
         }
     }
 }

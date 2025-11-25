@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD6D9D0B-0F72-4C7A-A80B-E32780B6AE72}|SchoolManagementSystem.Infrastructure\\SchoolManagementSystem.Infrastructure.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.infrastructure\\services\\departmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD6D9D0B-0F72-4C7A-A80B-E32780B6AE72}|SchoolManagementSystem.Infrastructure\\SchoolManagementSystem.Infrastructure.csproj|solutionrelative:schoolmanagementsystem.infrastructure\\services\\departmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD6D9D0B-0F72-4C7A-A80B-E32780B6AE72}|SchoolManagementSystem.Infrastructure\\SchoolManagementSystem.Infrastructure.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.infrastructure\\migrations\\20251125161907_deleteseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD6D9D0B-0F72-4C7A-A80B-E32780B6AE72}|SchoolManagementSystem.Infrastructure\\SchoolManagementSystem.Infrastructure.csproj|solutionrelative:schoolmanagementsystem.infrastructure\\migrations\\20251125161907_deleteseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76A43D7E-8F5D-4AAA-AD29-C6C679794BEB}|SchoolManagementSystem.Api\\SchoolManagementSystem.Api.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.api\\controllers\\valuescontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76A43D7E-8F5D-4AAA-AD29-C6C679794BEB}|SchoolManagementSystem.Api\\SchoolManagementSystem.Api.csproj|solutionrelative:schoolmanagementsystem.api\\controllers\\valuescontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA664F4A-9225-4362-9B0A-77A02FAFA839}|SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.core\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA664F4A-9225-4362-9B0A-77A02FAFA839}|SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj|solutionrelative:schoolmanagementsystem.core\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD6D9D0B-0F72-4C7A-A80B-E32780B6AE72}|SchoolManagementSystem.Infrastructure\\SchoolManagementSystem.Infrastructure.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.infrastructure\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD6D9D0B-0F72-4C7A-A80B-E32780B6AE72}|SchoolManagementSystem.Infrastructure\\SchoolManagementSystem.Infrastructure.csproj|solutionrelative:schoolmanagementsystem.infrastructure\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76A43D7E-8F5D-4AAA-AD29-C6C679794BEB}|SchoolManagementSystem.Api\\SchoolManagementSystem.Api.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76A43D7E-8F5D-4AAA-AD29-C6C679794BEB}|SchoolManagementSystem.Api\\SchoolManagementSystem.Api.csproj|solutionrelative:schoolmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA664F4A-9225-4362-9B0A-77A02FAFA839}|SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj|c:\\users\\mohamed saber\\desktop\\schoolmanagementsystem\\schoolmanagementsystem.core\\settings\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA664F4A-9225-4362-9B0A-77A02FAFA839}|SchoolManagementSystem.Core\\SchoolManagementSystem.Core.csproj|solutionrelative:schoolmanagementsystem.core\\settings\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,54 +31,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DepartmentServices.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\Services\\DepartmentServices.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystem.Infrastructure\\Services\\DepartmentServices.cs",
-              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\Services\\DepartmentServices.cs",
-              "RelativeToolTip": "SchoolManagementSystem.Infrastructure\\Services\\DepartmentServices.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAwwF8AAAAAAAAAAAAAAA==",
+              "Title": "20251125161907_deleteSeeding.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\Migrations\\20251125161907_deleteSeeding.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem.Infrastructure\\Migrations\\20251125161907_deleteSeeding.cs",
+              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\Migrations\\20251125161907_deleteSeeding.cs",
+              "RelativeToolTip": "SchoolManagementSystem.Infrastructure\\Migrations\\20251125161907_deleteSeeding.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T12:51:03.001Z",
+              "WhenOpened": "2025-11-25T16:19:08.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ValuesController1.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Api\\Controllers\\ValuesController1.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystem.Api\\Controllers\\ValuesController1.cs",
-              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Api\\Controllers\\ValuesController1.cs",
-              "RelativeToolTip": "SchoolManagementSystem.Api\\Controllers\\ValuesController1.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowBoAAAAAAAAAAAAAAA==",
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Core\\Interfaces\\IEmailService.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem.Core\\Interfaces\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Core\\Interfaces\\IEmailService.cs",
+              "RelativeToolTip": "SchoolManagementSystem.Core\\Interfaces\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T12:38:10.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T07:18:46.614Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CourseService.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\Services\\CourseService.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystem.Infrastructure\\Services\\CourseService.cs",
-              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Infrastructure\\Services\\CourseService.cs",
-              "RelativeToolTip": "SchoolManagementSystem.Infrastructure\\Services\\CourseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAJAAAAAAAAAA==",
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Core\\Settings\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem.Core\\Settings\\EmailSettings.cs",
+              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Core\\Settings\\EmailSettings.cs",
+              "RelativeToolTip": "SchoolManagementSystem.Core\\Settings\\EmailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T12:27:06.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Api\\Program.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystem.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Mohamed Saber\\Desktop\\SchoolManagementSystem\\SchoolManagementSystem.Api\\Program.cs",
-              "RelativeToolTip": "SchoolManagementSystem.Api\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T08:40:26.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T07:16:41.172Z"
             }
           ]
         }

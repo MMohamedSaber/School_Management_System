@@ -22,73 +22,7 @@ namespace SchoolManagementSystem.Infrastructure
         public DbSet<Submission> Submissions { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
-        private void SeedData(ModelBuilder modelBuilder)
-        {
-            // Seed Admin User
-            // Note: Password should be properly hashed in real implementation
-            // For now using a placeholder hash
-            modelBuilder.Entity<User>().HasData(
-                new User
-                {
-                    Id = 1,
-                    Name = "System Admin",
-                    Email = "admin@school.com",
-                    Password = "$2a$11$Placeholder.Hash.Should.Be.Real.BCrypt.Hash.Here",
-                    Role = UserRole.Admin,
-                    CreatedDate = new DateTime(2025, 1, 1),
-                    UpdatedDate = new DateTime(2025, 1, 1),
-                    IsActive = true
-                },
-                new User
-                {
-                    Id = 2,
-                    Name = "Teacher",
-                    Email = "teacher@school.com",
-                    Password = "$2a$11$Placeholder.Hash.Should.Be.Real.BCrypt.Hash.Here",
-                    Role = UserRole.Teacher,
-                    CreatedDate = new DateTime(2025, 1, 1),
-                    UpdatedDate = new DateTime(2025, 1, 1),
-                    IsActive = true
-                },
-                new User
-                {
-                    Id = 3,
-                    Name = "Student",
-                    Email = "student@school.com",
-                    Password = "$2a$11$Placeholder.Hash.Should.Be.Real.BCrypt.Hash.Here",
-                    Role = UserRole.Student,
-                    CreatedDate = new DateTime(2025, 1, 1),
-                    UpdatedDate = new DateTime(2025, 1, 1),
 
-                    IsActive = true
-                }
-
-            );
-
-            // Seed Sample Department
-            modelBuilder.Entity<Department>().HasData(
-                new Department
-                {
-                    Id = 1,
-                    Name = "Computer Science",
-                    Description = "Department of Computer Science and Engineering",
-                    CreatedDate = new DateTime(2025, 1, 1),
-                    UpdatedDate = new DateTime(2025, 1, 1),
-
-                    IsActive = true
-                },
-                new Department
-                {
-                    Id = 2,
-                    Name = "Mathematics",
-                    Description = "Department of Mathematics",
-                    CreatedDate = new DateTime(2025, 1, 1),
-                    UpdatedDate = new DateTime(2025, 1, 1),
-
-                    IsActive = true
-                }
-            );
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -139,7 +73,6 @@ namespace SchoolManagementSystem.Infrastructure
     .HasForeignKey(s => s.StudentId)
     .OnDelete(DeleteBehavior.Restrict);
 
-            SeedData(modelBuilder);
 
         }
 

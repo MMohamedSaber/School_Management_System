@@ -409,6 +409,22 @@
     ]
   },
   {
+    "ContainingType": "SchoolManagementSystem.Api.Controllers.EmailTestController",
+    "Method": "SendTestEmail",
+    "RelativePath": "api/admin/EmailTest/send-test",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "toEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolManagementSystem.Api.Controllers.UsersController",
     "Method": "GetAll",
     "RelativePath": "api/admin/Users",
@@ -771,6 +787,48 @@
     "ContainingType": "SchoolManagementSystem.Api.Controllers.StudentController",
     "Method": "GetGrades",
     "RelativePath": "api/student/grades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagementSystem.Api.Controllers.StudentController",
+    "Method": "GetNotifications",
+    "RelativePath": "api/student/notifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "onlyUnread",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagementSystem.Api.Controllers.StudentController",
+    "Method": "MarkAsRead",
+    "RelativePath": "api/student/notifications/{id}/read",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagementSystem.Api.Controllers.StudentController",
+    "Method": "GetUnreadCount",
+    "RelativePath": "api/student/notifications/unread-count",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1167,6 +1225,43 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagementSystem.Api.Controllers.NotificationsController",
+    "Method": "SendToClass",
+    "RelativePath": "api/teacher/Notifications/send-to-class/{classId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "classId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SchoolManagementSystem.Core.DTOs.Notification.CreateNotificationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolManagementSystem.Api.Controllers.NotificationsController",
+    "Method": "SendToStudents",
+    "RelativePath": "api/teacher/Notifications/send-to-students",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SchoolManagementSystem.Core.DTOs.Notification.CreateNotificationDto",
         "IsRequired": true
       }
     ],

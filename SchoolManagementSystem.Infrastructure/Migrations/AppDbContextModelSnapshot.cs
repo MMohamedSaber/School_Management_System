@@ -226,26 +226,6 @@ namespace SchoolManagementSystem.Infrastructure.Migrations
                     b.HasIndex("HeadOfDepartmentId");
 
                     b.ToTable("Departments");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Department of Computer Science and Engineering",
-                            IsActive = true,
-                            Name = "Computer Science",
-                            UpdatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Department of Mathematics",
-                            IsActive = true,
-                            Name = "Mathematics",
-                            UpdatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
                 });
 
             modelBuilder.Entity("SchoolManagementSystem.Core.Entities.Notification", b =>
@@ -424,41 +404,6 @@ namespace SchoolManagementSystem.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "admin@school.com",
-                            IsActive = true,
-                            Name = "System Admin",
-                            Password = "$2a$11$Placeholder.Hash.Should.Be.Real.BCrypt.Hash.Here",
-                            Role = 1,
-                            UpdatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "teacher@school.com",
-                            IsActive = true,
-                            Name = "Teacher",
-                            Password = "$2a$11$Placeholder.Hash.Should.Be.Real.BCrypt.Hash.Here",
-                            Role = 2,
-                            UpdatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "student@school.com",
-                            IsActive = true,
-                            Name = "Student",
-                            Password = "$2a$11$Placeholder.Hash.Should.Be.Real.BCrypt.Hash.Here",
-                            Role = 3,
-                            UpdatedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
                 });
 
             modelBuilder.Entity("SchoolManagementSystem.Core.Entities.Assignment", b =>

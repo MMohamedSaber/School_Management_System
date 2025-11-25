@@ -8,10 +8,11 @@ namespace SchoolManagementSystem.Infrastructure.Services
     public class AssignmentService : IAssignmentService
     {
         private readonly AppDbContext _context;
-
-        public AssignmentService(AppDbContext context)
+        private readonly IEmailService _emailService;
+        public AssignmentService(AppDbContext context, IEmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
 
         public async Task<AssignmentResponseDto> CreateAsync(CreateAssignmentDto dto, int teacherId)
@@ -265,7 +266,18 @@ namespace SchoolManagementSystem.Infrastructure.Services
             submission.GradedByTeacherId = teacherId;
 
             await _context.SaveChangesAsync();
-
+            try
+            {
+                await _emailService.SendAssignmentGradedEmailAsync(
+                    submission.Student.Email,
+                    submission.Student.Name,
+                    submission.Assignment.Title,
+                    dto.Grade);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Failed to send email: {ex.Message}");
+            }
             // Return updated submission
             var result = await _context.Submissions
                 .Include(s => s.Assignment)

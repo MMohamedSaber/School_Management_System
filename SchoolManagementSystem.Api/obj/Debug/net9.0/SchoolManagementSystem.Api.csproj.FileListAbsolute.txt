@@ -19,7 +19,6 @@ C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Api
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Api\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Api\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Api\obj\Debug\net9.0\SchoolMa.C3D4A285.Up2Date
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Api\obj\Debug\net9.0\SchoolManagementSystem.Api.dll
 C:\Users\Mohamed Saber\Desktop\SchoolManagementSystem\SchoolManagementSystem.Api\obj\Debug\net9.0\refint\SchoolManagementSystem.Api.dll

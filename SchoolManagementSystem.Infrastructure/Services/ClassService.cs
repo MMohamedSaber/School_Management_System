@@ -9,10 +9,11 @@ namespace SchoolManagementSystem.Infrastructure.Services
     public class ClassService : IClassService
     {
         private readonly AppDbContext _context;
-
-        public ClassService(AppDbContext context)
+        private readonly IEmailService _emailService;
+        public ClassService(AppDbContext context, IEmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
 
         public async Task<PaginatedResult<ClassResponseDto>> GetTeacherClassesAsync(
@@ -247,6 +248,20 @@ namespace SchoolManagementSystem.Infrastructure.Services
             _context.StudentClasses.Add(enrollment);
             await _context.SaveChangesAsync();
 
+            // Send email notification
+            try
+            {
+                await _emailService.SendClassEnrollmentEmailAsync(
+                    student.Email,
+                    student.Name,
+                    classEntity.Name,
+                    classEntity.Course.Name,
+                    classEntity.Teacher.Name);
+            }
+            catch (Exception ex)
+            {
+                // Log but don't fail the operation if email fails
+            }
             return new StudentEnrollmentResponseDto
             {
                 Id = enrollment.Id,

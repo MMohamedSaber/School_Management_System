@@ -89,6 +89,16 @@
             Soft delete a course
             </summary>
         </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.NotificationsController.SendToClass(System.Int32,SchoolManagementSystem.Core.DTOs.Notification.CreateNotificationDto)">
+            <summary>
+            Send notification to all students in a class
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.NotificationsController.SendToStudents(SchoolManagementSystem.Core.DTOs.Notification.CreateNotificationDto)">
+            <summary>
+            Send notification to specific students
+            </summary>
+        </member>
         <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.GetDashboard">
             <summary>
             Get student dashboard with statistics
@@ -129,6 +139,21 @@
             Download submission file
             </summary>
         </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.GetNotifications(System.Nullable{System.Boolean})">
+            <summary>
+            Get all notifications for current student
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.GetUnreadCount">
+            <summary>
+            Get unread notifications count
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.StudentController.MarkAsRead(System.Int32)">
+            <summary>
+            Mark notification as read
+            </summary>
+        </member>
         <member name="M:SchoolManagementSystem.Api.Controllers.UsersController.GetAll(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})">
             <summary>
             Get all users with pagination and filtering
@@ -167,6 +192,11 @@
         <member name="M:SchoolManagementSystem.Api.Controllers.CacheController.ClearAllCache">
             <summary>
             Clear all cache
+            </summary>
+        </member>
+        <member name="M:SchoolManagementSystem.Api.Controllers.EmailTestController.SendTestEmail(System.String)">
+            <summary>
+            Test email configuration
             </summary>
         </member>
         <member name="M:SchoolManagementSystem.API.Controllers.AuthController.Register(SchoolManagementSystem.Core.DTOs.Auth.RegisterDto)">
